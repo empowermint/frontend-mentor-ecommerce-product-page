@@ -198,16 +198,69 @@ main {
 
 /* Purchase */
 
+.purchase {
+  font-display: flex;
+  flex-direction: column;
+}
+
+.purchase * {
+  padding: 1rem;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+}
+
+.purchase-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--light-gray-blue);
+  border-radius: .6rem;
+  padding: 0;
+}
+
+.purchase-number > * {
+  margin: 0;
+  background: none;
+  transition: .1s ease-in;
+}
+
+.purchase-number button {
+  width: min-content;
+}
+
+.purchase-number img {
+  padding: 0;
+  margin: 0;
+  width: 1rem;
+}
+
+.purchase-number__display {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  text-align: center;
+  border: none;
+  flex-grow: 100;
+}
+
+.purchase-number__display::-webkit-inner-spin-button, 
+.purchase-number__display::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+.purchase-number__adjust:hover,
+.purchase-number__adjust:focus {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
 #add-to-cart {
   color: var(--white);
   font-size: 1rem;
   background-color: var(--orange);
   box-shadow: 0 1rem 1rem var(--pale-orange);
-  border: none;
-  padding: 1rem;
-  font-weight: 700;
-  border-radius: .6rem;
-  width: 100%;
   cursor: pointer;
   transition: .1s ease-in;
 }

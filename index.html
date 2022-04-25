@@ -42,10 +42,14 @@
         <span class="pricing__discount">50%</span>
         <span class="pricing__price-old">$250.00</span>
       </div>
-      <form class="purchase">
-        <input type="number" min="0" value="0">
+      <div class="purchase">
+        <div class="purchase-number">
+          <button class="purchase-number__adjust" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><img src="images/icon-minus.svg"></button>
+          <input class="purchase-number__display" type="number" min="1" value="1">
+          <button class="purchase-number__adjust" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><img src="images/icon-plus.svg"></button>
+        </div>
         <button id="add-to-cart">Add to cart</button>
-      </form>
+      </div>
     </div>
   </main>
   <footer class="attribution">
