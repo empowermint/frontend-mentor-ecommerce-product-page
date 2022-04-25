@@ -262,6 +262,7 @@ main {
   box-shadow: 0 1rem 1rem var(--pale-orange);
   cursor: pointer;
   transition: .1s ease-in;
+  border-radius: .6rem;
 }
 
 #add-to-cart:hover,
