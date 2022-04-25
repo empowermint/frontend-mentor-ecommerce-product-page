@@ -127,7 +127,6 @@ main {
 .product-carousel {
   min-height: 250px;
   min-width: 50%;
-  background-color: var(--pale-orange);
 }
 
 @media screen and (min-width: 650px) {
@@ -295,4 +294,63 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Product Carousel */
+
+.product-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product-carousel img {
+  width: 100%;
+}
+
+.product-carousel ul {
+  padding: 0;
+  margin: 0;
+}
+
+.product-carousel li {
+  list-style: none;
+  border-radius: .6rem;
+  overflow: clip;
+  line-height: 0;
+}
+
+.carousel-big {
+  width: 0;
+  height: 0;
+}
+
+.carousel-big.show {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.carousel-thumb {
+  transition: .1s ease-out;
+}
+
+.carousel-thumb.active {
+  outline: solid 4px var(--orange);
+}
+
+.carousel-thumb.active img {
+  filter: opacity(.5);
+}
+
+.carousel-thumb:hover,
+.carousel-thumb:focus {
+  filter: opacity(.5);
+  cursor: pointer;
 }
