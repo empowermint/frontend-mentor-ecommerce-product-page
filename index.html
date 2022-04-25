@@ -3,37 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | E-commerce product page</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
+  <header>
+    <nav class="site-navigation">
+      <ul class="site-navigation__items">
+          <li><a href="#">Collections</li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="user-menu">
+      <ul class="user-menu__items">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="product-carousel">
+      <!-- Carousel to go here -->
+    </div>
+    <div class="product-information">
+      <h3 class="product-information__brand">Sneaker Company</h3>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="pricing">
+        <span class="pricing__price-current">$125.00</span>
+        <span class="pricing__discount">50%</span>
+        <span class="pricing__price-old">$250.00</span>
+      </div>
+      <form class="purchase">
+        <input type="number" min="0" value="0">
+        <button id="add-to-cart">Add to cart</button>
+      </form>
+    </div>
+  </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
