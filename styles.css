@@ -25,6 +25,46 @@ p {
   font-size: 16px;
 }
 
+/* Layout */
+
+body {
+  display: flex;
+  flex-flow: column;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+}
+
+.product-carousel {
+  min-height: 250px;
+  min-width: 50%;
+  background-color: var(--pale-orange);
+}
+
+@media screen and (min-width: 650px) {
+  main {
+    flex-flow: row;
+  }
+
+  .product-carousel {
+    width: 100%;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+  }
+}
+
 /* Footer */
 
 .attribution { font-size: 11px; text-align: center; }
