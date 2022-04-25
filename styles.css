@@ -22,6 +22,10 @@
   font-family: 'kumbh sans', sans-serif;
 }
 
+header li {
+  list-style: none;
+}
+
 /* Typography */
 
 p {
@@ -49,7 +53,7 @@ footer {
 header {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -91,6 +95,30 @@ main {
 
   .product-information {
     padding: var(--pad-large);
+  }
+}
+
+/* Header */
+
+.user-menu {
+  margin-left: auto;
+}
+
+.user-menu__items {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.user-menu__cart,
+.user-menu__avatar {
+  width: 1.2rem;
+}
+
+@media screen and (min-width: 650px) {
+  .user-menu__avatar {
+    width: 3rem;
   }
 }
 
