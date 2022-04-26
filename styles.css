@@ -72,6 +72,15 @@ header {
   align-items: center;
 }
 
+.site-logo a img {
+  transition: .1s ease-out;
+}
+
+.site-logo a:focus img,
+.site-logo a:hover img {
+  filter: drop-shadow(0 0 1rem var(--orange));
+}
+
 header ul {
   margin: 0;
 }
