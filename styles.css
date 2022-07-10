@@ -175,11 +175,14 @@ header li {
 .carousel-big {
   width: 0;
   height: 0;
+  opacity: 0;
+  transition: opacity .3s ease-out;
 }
 
 .carousel-big.show {
   width: 100%;
   height: auto;
+  opacity: 1;
 }
 
 .carousel-menu {
