@@ -6,76 +6,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | E-commerce product page</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- Development build library CDNs - replace before production: -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- App scripts: -->
+  <script type="text/babel" src="app.jsx"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="site-logo">
-      <a href="#"><img src="images/logo.svg" alt="sneakers logo"></a>
-    </div>
-    <nav class="site-navigation">
-      <ul class="site-navigation__items">
-        <a href="#"><li>Collections</li></a>
-        <a href="#"><li>Men</li></a>
-        <a href="#"><li>Women</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Contact</li></a>
-      </ul>
-    </nav>
-    <nav class="user-menu">
-      <ul class="user-menu__items">
-        <li><a href="#"><img class="user-menu__cart" alt="shopping cart" src="images/icon-cart.svg"></a></li>
-        <li><a href="#"><img class="user-menu__avatar" alt="user avatar" src="images/image-avatar.png"></a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="product-carousel">
-      <ul class="carousel-container">
-        <li id="cb0" class="carousel-big show"><img src="images/image-product-1.jpg"></li>
-        <li id="cb1" class="carousel-big"><img src="images/image-product-2.jpg"></li>
-        <li id="cb2" class="carousel-big"><img src="images/image-product-3.jpg"></li>
-        <li id="cb3" class="carousel-big"><img src="images/image-product-4.jpg"></li>
-        <button class="carousel-container__button previous">
-          <img src="images/icon-previous.svg">
-        </button>
-        <button class="carousel-container__button next">
-          <img src="images/icon-next.svg">
-        </button>
-      </ul>
-      <ul class="carousel-menu">
-        <li class="carousel-thumb active"><img src="images/image-product-1-thumbnail.jpg"></li>
-        <li class="carousel-thumb"><img src="images/image-product-2-thumbnail.jpg"></li>
-        <li class="carousel-thumb"><img src="images/image-product-3-thumbnail.jpg"></li>
-        <li class="carousel-thumb"><img src="images/image-product-4-thumbnail.jpg"></li>
-      </ul>
-    </div>
-    <div class="product-information">
-      <h3 class="product-information__brand">Sneaker Company</h3>
-      <h1>Fall Limited Edition Sneakers</h1>
-      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
-      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-      <div class="pricing">
-        <span class="pricing__price-current">$125.00</span>
-        <span class="pricing__discount">50%</span>
-        <span class="pricing__price-old">$250.00</span>
-      </div>
-      <div class="purchase">
-        <div class="purchase-number">
-          <button class="purchase-number__adjust" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><img src="images/icon-minus.svg"></button>
-          <input class="purchase-number__display" type="number" min="1" value="1">
-          <button class="purchase-number__adjust" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><img src="images/icon-plus.svg"></button>
-        </div>
-        <button id="add-to-cart">Add to cart</button>
-      </div>
-    </div>
-  </main>
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/empowermint">James T. Harding</a>.
-  </footer>
+  <div id="app"></div>
 </body>
 </html>
